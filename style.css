@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    box-sizing: border-box;
+  
+    font-family: inherit;
+  }
+  
+  body {
+    background-color: #c0ebf9;
+    min-height: 100vh;
+  }
+
+  form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      padding-top: 100px;
+      
+  }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #467745;
+  }
+
+  input, text{
+    width: 600px;
+    height: 64px;
+    border: 0;
+    padding: 20px;
+  }
+
+  textarea {
+    width: 600px;
+    height: 120px;
+    border: 0;
+    padding: 20px;
+  }
+
+  #root > form > input[type=text]::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    font-size: 16px;
+    color: #467745;
+    opacity: 0.6;
+  }
+
+  #root > form > textarea::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    color: #467745;
+    opacity: 0.6;
+  }
+
+   p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: regular;
+    font-size: 16px;
+    color: #467745;
+  }
+
+  button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    background-color: #467745;
+    color: #c0ebf9;
+    letter-spacing: 0.2em;
+    border: 0;
+    padding: 15px;
+    width: 250px;
+    height: 65px;
+    align-content: center;
+  }
+
+.first{   
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+    align-self: center;
+   
+   
+}
+
+.second{
+    display: flex;
+    flex-direction: row;
+    padding: 0 245px 0 0;
+    gap: 10px;
+    align-items: center;
+    align-self: center;
+  
+}
+
+
+  .first input{
+    width: 15px;
+    height: 15px;
+  }
+
+  .second input{
+    width: 15px;
+    height: 15px;
+  }
+
+  .underline{
+    text-decoration: underline;
+  }
+
+  @media only screen and (max-width: 640px){
+    form {
+        margin: 15px;
+      }
+    
+      #root > form > h1 {
+        text-align:left;
+      }
+    
+      input, textarea {
+        width: calc(100% - 40px);
+      }
+    
+      button {
+        width: 50%;
+        margin: 20px 0;
+      }
+  }
